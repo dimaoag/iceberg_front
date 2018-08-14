@@ -1,0 +1,321 @@
+@font-face {
+    font-family: Cambria;
+    src: url(../fonts/cambria/Cambria.ttf);
+}
+@font-face {
+    font-family: EXO_2_0;
+    src: url(../fonts/exo_2_0/Exo_2_0.otf);
+}
+@font-face {
+    font-family: Intro;
+    src: url(../fonts/intro/Intro.otf);
+}
+
+
+/* --------------- reset.css --------------- */
+body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;                               /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline;          /* приводим все к одной базовой линии */
+    background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+}
+input, select, button, textarea {
+    margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+    font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+    outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+    min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+    font-size: 16px;
+}
+body {
+    font-family: 'Cambria', Arial, sans-serif;
+    color: #000000;
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height:100%;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+a:hover {
+    color: #92deff;
+    text-decoration:none;
+}
+a:focus, a:active {
+    color: #c83867;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+img{
+    max-width:100%;
+}
+.clr{
+    clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* помните о том, что нужно определить стили фокуса! */
+:focus {
+    outline: 0;
+}
+/* --------------- /базовые настройки ---------*/
+
+
+.section1 {
+    background-image: url("../images/bg.png");
+    background-size: cover;
+    /*background: url(img/image.jpg) no-repeat center center fixed;*/
+    /*background-size: cover;*/
+    /*-moz-background-size: 100%; !* Firefox 3.6+ *!*/
+    /*-webkit-background-size: 100%; !* Safari 3.1+ и Chrome 4.0+ *!*/
+    /*-o-background-size: 100%; !* Opera 9.6+ *!*/
+    /*background-size: 100%; !* Современные браузеры *!*/
+    /*background-repeat: repeat-y;*/
+}
+
+.section2 {
+    background-color: #ffffff;
+}
+
+.section3 {
+    background-color:  #000000;
+    color: white;
+}
+
+.section4 {
+    background-color:  #CC938E;
+}
+
+.section5 {
+    background-color:  #D2C598;
+}
+
+/*----------- section-1 -------------*/
+nav{
+    background-color: rgba(0,0,0,0.0);
+}
+.nav-link, .phone{
+    font-size: 1.25rem;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+button.burger{
+    color: #ffffff;
+}
+.phone{
+    padding-right: 10%;
+}
+.logo{
+    max-width: 350px;
+}
+.section-1-title{
+    font-family: Intro, Arial, sans-serif;
+    color: #92deff;
+    font-size: 4.18rem;
+    margin-top: 10px;
+    line-height: 1;
+    border-right: 5px solid #92deff;
+    padding-right: 5%;
+    /*white-space: nowrap;*/
+}
+.section-1-text{
+    font-family: 'EXO_2_0', Arial, sans-serif;
+    font-size: 2.0rem;
+    color: #ffff;
+    line-height: 1.3;
+}
+.section-1-text p{
+    white-space: nowrap;
+}
+.section-1-text-color{
+    color: #92deff;
+    white-space: nowrap;
+}
+
+
+/*----------- section-2 -------------*/
+
+.section2-container{
+    padding-top: 10%;
+}
+
+.section-2-first-title{
+    font-family: Intro, Arial, sans-serif;
+    color: #000000;
+    font-size: 2.12rem;
+    padding: 20px 0;
+}
+.section-2-second-title{
+    font-family: EXO_2_0, Arial, sans-serif;
+    color: #000000;
+    font-size: 1.75rem;
+}
+.section2-text{
+    padding-top: 50px;
+}
+.sec-2-item{
+    position: relative;
+    margin-bottom: 35px;
+}
+.sec-2-item-number{
+    width: 51px;
+    height: 38px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sec-2-item-text{
+    padding: 10px 50px 0 27px;
+    font-size: 1.2rem;
+}
+/*----------- section-3 -------------*/
+.section-3-title{
+    font-family: Intro, Arial, sans-serif;
+    padding: 15% 0 10% 0;
+    font-size: 2rem;
+    letter-spacing: 0.24px;
+    color: #92deff;
+}
+.col-video{
+    /*padding-right: 5%;*/
+
+}
+.sec-3-video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.sec-3-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.text-under-video{
+    font-family: EXO_2_0, Arial, sans-serif;
+    font-size: 1.2rem;
+}
+.text-below-form{
+    font-size: 1.2rem;
+    font-family: EXO_2_0, Arial, sans-serif;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: block;
+    text-align: right;
+}
+.sec-3-right-block{
+    border-left: 2px solid #6c6c6c;
+    margin-left: 100px;
+}
+.sec-3-form{
+    margin-top: 50px;
+}
+.sec-3-form input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #6c6c6c;
+    color: white;
+    display: block;
+    font-family: EXO_2_0, Arial, sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 250px;
+    float: right;
+    margin-bottom: 15px;
+}
+/*.sec-3-form input[type=number]::-webkit-inner-spin-button,*/
+/*.sec-3-form input[type=number]::-webkit-outer-spin-button {*/
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+    /*margin: 0;*/
+/*}*/
+.sec-3-form input:focus{
+    outline: none;
+}
+.sec-3-form input::placeholder{
+    color: #6c6c6c;
+    font-weight: bold;
+    font-family: EXO_2_0, Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.sec-3-form button{
+    margin-top: 10px;
+    display: block;
+    padding: 5px 35px;
+    background: none;
+    color: white;
+    font-family: EXO_2_0, Arial, sans-serif;
+    text-transform: uppercase;
+    border: 1px solid #92deff;
+    border-radius: 5px;
+    float: right;
+}
+.sec-3-form button:hover{
+    cursor: pointer;
+}
+
+
