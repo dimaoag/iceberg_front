@@ -136,12 +136,26 @@ img{
 }
 
 .section4 {
-    background-color:  #CC938E;
+    background-color:  #ffffff;
 }
 
-.section5 {
-    background-color:  #D2C598;
+/*.section5 {*/
+    /*background-color:  #D2C598;*/
+/*}*/
+
+.section6 {
+    background-color:  #000000;
+    color: white;
 }
+
+.section7 {
+    background-color:  #ffffff;
+}
+.section8 {
+    background-color:  #000000;
+    color: white;
+}
+
 
 /*----------- section-1 -------------*/
 nav{
@@ -234,17 +248,13 @@ button.burger{
     letter-spacing: 0.24px;
     color: #92deff;
 }
-.col-video{
-    /*padding-right: 5%;*/
-
-}
-.sec-3-video{
+.sec-3-video, .sec-6-video{
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
-.sec-3-video iframe{
+.sec-3-video iframe, .sec-6-video iframe{
     position: absolute;
     top: 0;
     left: 0;
@@ -285,13 +295,11 @@ button.burger{
     float: right;
     margin-bottom: 15px;
 }
-/*.sec-3-form input[type=number]::-webkit-inner-spin-button,*/
-/*.sec-3-form input[type=number]::-webkit-outer-spin-button {*/
-    /*-webkit-appearance: none;*/
-    /*-moz-appearance: none;*/
-    /*appearance: none;*/
-    /*margin: 0;*/
-/*}*/
+.sec-3-form input[type=number]::-webkit-inner-spin-button,
+.sec-3-form input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 .sec-3-form input:focus{
     outline: none;
 }
@@ -316,6 +324,228 @@ button.burger{
 }
 .sec-3-form button:hover{
     cursor: pointer;
+}
+/*----------- section-4 -------------*/
+.sec-4-title{
+    font-family: Intro, Arial, sans-serif;
+    font-size: 2.12rem;
+    margin-top: 10%;
+    margin-bottom: 3%;
+}
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.tab{
+    font-family: EXO_2_0, Arial, sans-serif;
+    color: #040404;
+    display: block;
+    margin:  5px 15px 5px 0;
+    text-align: center;
+    padding: 5px 15px;
+    border: 1px solid #a2a2a2;
+}
+.active-tab{
+    color: #000000;
+    border: 2px solid #000000;
+}
+.tab:hover{
+    cursor: pointer;
+}
+.nav-text{
+    display: flex;
+    align-items: center;
+}
+.nav-text h3{
+    font-family: EXO_2_0, Arial, sans-serif;
+    color: #040404;
+    font-size: 1.5rem;
+}
+.nav-text a{
+    color: #040404;
+}
+.nav-link-tab{
+    margin-left: 10px;
+
+    /*background-color: #92deff;*/
+    width: 40px;
+    height: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 25px;*/
+    /*height: 25px;*/
+}
+nav-link-tab i{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    color: #040404;
+}
+.nav-link-tab img{
+    width: 20px;
+    height: 20px;
+    /*padding: 2px;*/
+}
+.prev, .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+    height: 100%;
+}
+.slider-images{
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+/*----------- section-7 -------------*/
+.sec-7-title{
+    font-family: Intro, Arial, sans-serif;
+    font-size: 2.1rem;
+    margin-top: 15%;
+    margin-bottom: 7%;
+}
+.map{
+    width: 100%;
+    height: 400px;
+}
+.map-text{
+    font-family: EXO_2_0, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+.map-way{
+    color: #040404;
+}
+.sec-7-way img{
+    display: inline;
+    margin: 5px 0 0 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/*----------- section-8 -------------*/
+.footer{
+    padding-top: 20%;
+}
+.footer-left-title-1, .sec-6-title{
+    font-family: Intro, Arial, sans-serif;
+    font-size: 2.1rem;
+    padding: 20px 0;
+
+}
+.footer-left-title-2{
+    font-family: EXO_2_0, Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.socs{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.socs a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-left: 7px;
+}
+.soc-img{
+    width: 100%;
+    height: 100%;
+}
+.footer-left-block{
+    padding-right: 40px;
+}
+.footer-right-block{
+    border-left: 2px solid #92deff;;
+    padding-left: 40px;
+    padding-top: 20px;
+    display: flex;
+}
+.footer-form{
+    overflow: hidden;
+    margin-right: 10px;
+}
+.footer-form input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #6c6c6c;
+    color: white;
+    width: 100%;
+    font-family: EXO_2_0, Arial, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    padding: 5px;
+}
+.footer-form input[type=number]::-webkit-inner-spin-button,
+.footer-form input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.footer-form button{
+    margin-top: 30px;
+    white-space: nowrap;
+    padding: 5px 35px 7px 35px;
+    display: block;
+    background: none;
+    color: white;
+    font-family: EXO_2_0, Arial, sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid #92deff;
+    float: right;
+}
+.footer-form button:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.footer-form button:hover{
+    cursor: pointer;
+}
+
+/*----------- section-6 -------------*/
+.sec-6-title{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+.sec-6-right-block{
+    font-family: EXO_2_0, Arial, sans-serif;
+    text-align: justify;
+}
+.sec-6-right-block h2{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.sec-6-right-block-text{
+    position: relative;
+}
+.sec-6-right-block-text img{
+    display: inline;
+    padding: 0 5px;
+}
+.sec-6-right-block-text p{
+    display: inline;
+    font-size: 1.2rem;
+}
+.name{
+    font-size: 1.2rem;
+}
+.salon-meri{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+.salon-meri a{
+    color: #92deff;
+    /*padding-left: 10px;*/
+}
+.salon-meri a:hover{
+    text-decoration: underline;
 }
 
 

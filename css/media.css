@@ -42,6 +42,40 @@
         padding-right: 0;
         border-right: none;
     }
+    .sec-3-right-block{
+        border-left: none;
+        margin-left: 0;
+    }
+    /*----------- section-8 -------------*/
+    .footer-right-block{
+        border-left: none;
+        padding: 0;
+    }
+    .footer-right-block{
+        margin-top: 30px;
+    }
+    .footer-left-title-2{
+        margin-top: 50px;
+    }
+    /*----------- section-6 -------------*/
+    .sec-6-video iframe{
+        max-height: 350px;
+    }
+    .sec-6-right-block h2{
+        font-size: 1.2rem;
+    }
+    .sec-6-right-block-text p{
+        font-size: 1rem;
+    }
+    .salon-meri{
+        font-size: 1.3rem;
+    }
+    .phone{
+        display: none;
+    }
+
+
+
 }
 @media all and (max-width: 515px){
     /*----------- section-1 -------------*/
@@ -57,20 +91,114 @@
     }
     /*----------- section-2 -------------*/
     .section-2-first-title{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .section-2-second-title{
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
     .section2-text{
         padding-top: 20px;
     }
     .sec-2-item{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .sec-2-item-text{
-        font-size: 1rem;
-        padding: 10px 25x 0 27px;
+        font-size: 0.9rem;
+        padding: 10px 10px 0 27px;
     }
+
+    /*----------- section-3 -------------*/
+    .col-video{
+        margin-right: 15px;
+    }
+    .section-3-title{
+        font-size: 1.4rem;
+    }
+    .text-under-video{
+        font-size: 1rem;
+    }
+    .text-below-form{
+        font-size: 1rem;
+    }
+    .sec-3-form{
+        margin-top: 30px;
+    }
+    .sec-3-form input{
+        font-size: 1rem;
+    }
+    .sec-3-form input::placeholder{
+        font-size: 1rem;
+    }
+    .sec-3-form button{
+        padding: 2px 15px;
+    }
+
+    /*----------- section-3 -------------*/
+    .sec-4-title{
+        margin-top: 20%;
+        font-size: 1.5rem;
+    }
+    .nav-text h3{
+        font-size: 1rem;
+    }
+    .nav-link-tab{
+        width: 30px;
+        height: 15px;
+    }
+    .nav-link-tab-link img{
+        width: 10px;
+        height: 10px;
+    }
+    .tabs{
+        margin-top: 40px;
+    }
+    .tab{
+        font-size: 1rem;
+    }
+
+    /*----------- section-7 -------------*/
+    .sec-7-title{
+        font-size: 1.3rem;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    .map{
+        height: 200px;
+    }
+    .map-text{
+        font-size: 1rem;
+    }
+
+    /*----------- section-8 -------------*/
+
+    .footer-left-title-1{
+        font-size: 1.5rem;
+    }
+    .footer-left-title-2{
+        font-size: 1.2rem;
+    }
+    .footer-right-block{
+        flex-direction: column;
+    }
+    .socs{
+        margin: 30px 0;
+        justify-content: space-around;
+    }
+    .footer-form{
+        margin-right: 10px;
+    }
+    .footer-form button{
+        font-size: 1.1rem;
+        padding: 5px 25px 7px 25px;
+    }
+
+    /*----------- section-6 -------------*/
+    .sec-6-title{
+        font-size: 1.5rem;
+    }
+    .sec-6-text-hide{
+        display: none;
+    }
+
 
 }
