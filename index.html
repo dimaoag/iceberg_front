@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/full-page-scroll.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>IceBerg</title>
@@ -17,28 +18,29 @@
         <div class="container-fluid">
             <div class="row">
                 <nav class="navbar w-100 navbar-expand-lg">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="images/logo_small.png" class="logo-small" alt="image">
                     </a>
                     <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
                     </button>
-                    <div class="collapse navbar-collapse w-100 d-flex justify-content-end" id="navbarSupportedContent">
-                        <!--<ul class="navbar-nav mr-auto">-->
-                            <!--<li class="nav-item active">-->
-                                <!--<a class="nav-link" href="#about-us">О нас <span class="sr-only">(current)</span></a>-->
-                            <!--</li>-->
-                            <!--<li class="nav-item">-->
-                                <!--<a class="nav-link" href="#projects">Примеры работ</a>-->
-                            <!--</li>-->
-                            <!--<li class="nav-item">-->
-                                <!--<a class="nav-link" href="#reviews">Отзывы</a>-->
-                            <!--</li>-->
-                            <!--<li class="nav-item">-->
-                                <!--<a class="nav-link" href="#contacts">Контакты</a>-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                        <a href="#" class="phone">+380 93 91 79 871</a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#2">О нас <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#3">Примеры работ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#4">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#5">Контакты</a>
+                            </li>
+                        </ul>
+                        <a href="tel:0962965202" class="phone">+38 093 91 78 871</a>
+                        <!--<a href="#6" class="phone">093 91 79 871</a>-->
                     </div>
                 </nav>
             </div>
@@ -57,7 +59,7 @@
                         <p>Сделаем Вам <br>результат</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
                     <div class="section-1-text">
                         <p>Наводим порядок в <span class="section-1-text-color">учете клиентов</span></p>
                         <p>Создаем и улучшаем <span class="section-1-text-color">сайты</span></p>
@@ -75,7 +77,7 @@
                     <div class="section-2-second-title">Мы четко видим проблемы и решаем их самым коротким путем</div>
                 </div>
             </div>
-            <div class="row section2-text">
+            <div class="row section2-text mb-2">
                 <div class="col-lg-6">
                     <div class="sec-2-item w-100">
                         <div class="sec-2-item-number"><img src="images/01.png" alt=""></div>
@@ -87,14 +89,14 @@
                     <div class="sec-2-item w-100">
                         <div class="sec-2-item-number"><img src="images/02.png" alt=""></div>
                         <div class="sec-2-item-text">
-                            у вас плохо настроенная реклама и
+                            У вас плохо настроенная реклама и
                             маленькая конверсия сайта
                         </div>
                     </div>
                     <div class="sec-2-item w-100">
                         <div class="sec-2-item-number"><img src="images/03.png" alt=""></div>
                         <div class="sec-2-item-text">
-                            у вас есть сайт или страница в Инстаграм,
+                            У вас есть сайт или страница в Инстаграм,
                             но реклама отсутсвует
                         </div>
                     </div>
@@ -134,21 +136,28 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-video">
-                    <div class="sec-3-video">
-                        <iframe src="https://www.youtube.com/embed/IcrbM1l_BoI"></iframe>
+                    <div class="sec-6-video">
+                        <!--<a href="https://www.youtube.com/embed/BwDnMLQd-XI?autoplay=1" class="js-iframe">-->
+                            <!--<img src="http://img.youtube.com/vi/BwDnMLQd-XI/maxresdefault.jpg" alt="" />-->
+                        <!--</a>-->
+                        <!--<iframe src="https://www.youtube.com/embed/BwDnMLQd-XI"></iframe>-->
+                        <video  style="width: 100%;" controls="controls">
+                            <source src="problem.mp4" type="video/mp4">
+                            <source src="problem.mp4" type="video/ogg">
+                        </video>
                     </div>
                     <div class="text-under-video">
                         <p>Узнайте за 60 сек. чем мы отличаемся от других</p>
                     </div>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6">
                     <div class="sec-3-right-block h-100">
                         <h2 class="text-below-form">Получите бесплатный разбор и совет, как решить проблему с клиентами</h2>
-                        <form action="#" class="sec-3-form">
-                            <input type="number" placeholder="Введите телефон" class="clearfix">
-                            <div class="clear clearfix"></div>
+                        <form class="sec-3-form form-sec-3 js-form">
+                            <input data-mask="callback-catalog-phone" type="text" placeholder="Введите телефон" name="phone" required>
+                            <!--<div class="clear clearfix"></div>-->
                             <button type="submit" class="clearfix">ПОЛУЧИТЬ СОВЕТ</button>
-                            <div class="clear clearfix"></div>
+                            <!--<div class="clear clearfix"></div>-->
                         </form>
                     </div>
                 </div>
@@ -179,12 +188,12 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="nav-text mb-3">
-                                        <h3>Квиз по откатным воротам</h3>
-                                        <a href="#">
-                                            <div class="nav-link-tab">
-                                                <i class="fa fa-link" aria-hidden="true"></i>
-                                            </div>
-                                        </a>
+                                        <!--<h3>Кликните по картинке</h3>-->
+                                        <!--<a href="#">-->
+                                            <!--<div class="nav-link-tab">-->
+                                                <!--<i class="fa fa-link" aria-hidden="true"></i>-->
+                                            <!--</div>-->
+                                        <!--</a>-->
                                     </div>
                                 </div>
                             </div>
@@ -199,17 +208,17 @@
                                             </ol>
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <a href="#">
+                                                    <a href="./manicure/index.html">
                                                         <img class="d-block w-100" src="images/project2.png" alt="First slide">
                                                     </a>
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <a href="#">
+                                                    <a href="./salon_ice_link/index.html">
                                                         <img class="d-block w-100" src="images/project3.png" alt="Second slide">
                                                     </a>
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <a href="#">
+                                                    <a href="./doors/index.html">
                                                         <img class="d-block w-100" src="images/project4.png" alt="Third slide">
                                                     </a>
                                                 </div>
@@ -231,12 +240,12 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="nav-text mb-3">
-                                        <h3>Квиз по откатным воротам</h3>
-                                        <a href="#">
-                                            <div class="nav-link-tab">
-                                                <img src="images/link.png" alt="">
-                                            </div>
-                                        </a>
+                                        <!--<h3>Квиз по откатным воротам</h3>-->
+                                        <!--<a href="#">-->
+                                            <!--<div class="nav-link-tab">-->
+                                                <!--<i class="fa fa-link" aria-hidden="true"></i>-->
+                                            <!--</div>-->
+                                        <!--</a>-->
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +260,7 @@
                                             <!--</ol>-->
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <a href="#">
+                                                    <a href="./vorota/index.html">
                                                       <img class="d-block w-100" src="images/kvith.png" alt="First slide">
                                                     </a>
                                                 </div>
@@ -382,75 +391,33 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="sec-6-video">
-                                            <iframe src="https://www.youtube.com/embed/IcrbM1l_BoI"></iframe>
+
+                                            <a href="https://www.youtube.com/embed/BwDnMLQd-XI?autoplay=1" class="b-video js-iframe" id="js-iframe">
+                                                <img src="http://img.youtube.com/vi/BwDnMLQd-XI/maxresdefault.jpg" alt="" />
+                                                <div class="b-play">
+                                                    <!--<svg class="svg" width="21" height="29"><use xlink:href="./images/sprite.svg#play"></use></svg>-->
+                                                    <!--<svg class="svg" width="21" height="29"><use xlink:href="./images/play.svg"></use></svg>-->
+                                                    <img class="svg" src="images/play_pn.png">
+                                                </div>
+                                            </a>
+
+                                            <!--<iframe src="https://www.youtube.com/embed/BwDnMLQd-XI"></iframe>-->
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="sec-6-right-block">
                                             <div class="sec-6-text-hide">
-                                                <h2>...Все подрядщики пропадали...</h2>
+                                                <h2>...Я не понимала куда деваються деньги...</h2>
                                                 <div class="sec-6-right-block-text">
                                                     <img src="images/double-arrow-pointing-to-left.png" alt="">
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+                                                    <p>Здравствуйте, я хозяйка салона красоты Meri Meri. Я не знала сколько у меня клиентов и не знала вообще куда деваются деньги. Благодаря этой компании Iceberg мы выросли в пять раз. Они навели мне порядок в  учете клиентов, в сайте и инстаграм. Я хочу их порекомендовать, если вы еще думаете или ищите команду, которая могла бы вам помочь вырасти, то смело обращайтесь!</p>
                                                     <img src="images/double-arrow-pointing-to-right.png" alt="">
                                                 </div>
                                                 <div class="text-right name">Дарморос Марина </div>
                                             </div>
                                             <div class="salon-meri d-flex flex-wrap justify-content-between">
                                                 <p class="">Cалон красоты «Meri & Meri»</p>
-                                                <a href="#" class="">meri-meri.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="sec-6-video">
-                                            <iframe src="https://www.youtube.com/embed/IcrbM1l_BoI"></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="sec-6-right-block">
-                                            <div class="sec-6-text-hide">
-                                                <h2>...Все подрядщики пропадали...</h2>
-                                                <div class="sec-6-right-block-text">
-                                                    <img src="images/double-arrow-pointing-to-left.png" alt="">
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
-                                                    <img src="images/double-arrow-pointing-to-right.png" alt="">
-                                                </div>
-                                                <div class="text-right name">Дарморос Марина </div>
-                                            </div>
-                                            <div class="salon-meri d-flex flex-wrap justify-content-between">
-                                                <p class="">Cалон красоты «Meri & Meri»</p>
-                                                <a href="#" class="">meri-meri.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="sec-6-video">
-                                            <iframe src="https://www.youtube.com/embed/IcrbM1l_BoI"></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="sec-6-right-block">
-                                            <div class="sec-6-text-hide">
-                                                <h2>...Все подрядщики пропадали...</h2>
-                                                <div class="sec-6-right-block-text">
-                                                    <img src="images/double-arrow-pointing-to-left.png" alt="">
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
-                                                    <img src="images/double-arrow-pointing-to-right.png" alt="">
-                                                </div>
-                                                <div class="text-right name">Дарморос Марина </div>
-                                            </div>
-                                            <div class="salon-meri d-flex flex-wrap justify-content-between">
-                                                <p class="">Cалон красоты «Meri & Meri»</p>
-                                                <a href="#" class="">meri-meri.com</a>
+                                                <a href="http://salon.meri-shop.com" class="">salon.meri-shop.com</a>
                                             </div>
                                         </div>
                                     </div>
@@ -487,13 +454,14 @@
                </div>
                <div class="col-lg-3 mt-3">
                    <div class="sec-7-way">
-                       <p class="d-block map-text map-way">Посмотреть маршрут <img src="images/turn_right.png" alt=""></p>
-
+                       <a href="https://www.google.com/maps/dir//49.235413,28.48937/@49.235172,28.4848191,16z?hl=uk">
+                            <p class="d-block map-text map-way">Посмотреть маршрут <img src="images/turn_right.png" alt=""></p>
+                       </a>
                    </div>
                    <p class="d-block map-text">г. Винница, ул. 600-летия, 17</p>
                    <p class="d-block map-text">с Пн по Пт    9:00 - 18:00</p>
-                   <p class="d-block map-text">+38 (0432) 64-52-10</p>
-                   <p class="d-block map-text">+38 (067) 430 97 62</p>
+                   <p class="d-block map-text"><a href="tel:0939178871" style="color: #3d3d3d;">+38 (093) 91 78 871</a></p>
+                   <p class="d-block map-text"><a href="tel:0962965202" style="color: #3d3d3d;">+38 (096) 29 65 202</a></p>
                </div>
            </div>
        </div>
@@ -517,8 +485,10 @@
                             <img class="soc-img" src="images/whatsapp.png" alt="">
                         </a>
                     </div>
-                    <form action="#" class="footer-form">
-                        <input type="number" placeholder="Введите телефон">
+                    <form class="footer-form form-sec-8 js-form">
+                        <input data-mask="callback-catalog-phone" type="text"
+                               placeholder="Введите телефон" name="phone" class="form_phone"
+                               required>
                         <button type="submit">Получить консультацю</button>
                     </form>
                 </div>
@@ -527,11 +497,30 @@
     </section>
 </div>
 
+<div class="is-hidden">
+    <div class="popup popup-thanks popup_my" id=popup-thanks>
+        <h1 class="pop-title-text">Спасибо! Ваша заявка отправлена</h1>
+        <div class="pop-vid-wrap">
+            <div class="popup-video">
+                <video  style="width: 100%;" controls="controls" id="vid">
+                    <source src="IMG_5724.mp4" type="video/mp4">
+                    <source src="IMG_5724.mp4" type="video/ogg">
+                </video>
+                <!--<iframe src="https://www.youtube.com/embed/BwDnMLQd-XI?autoplay=1"></iframe>-->
+            </div>
+        </div>
+        <div class="pop-btn-wrap">
+            <a href="http://iceberg.vn.ua/download.php?filename=ilovepdf_merged.pdf" class="pop-btn">Скачать чек-лист</a>
+        </div>
+    </div>
+</div>
 
 
-<script src="js/jquery-3.3.1.js"></script>
+<!--<script src="js/jquery-3.3.1.js"></script>-->
+<script src="js/libs.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/full-page-scroll.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3g7aWqbS3jjG4h6gJJroRpCR6TFzjJPM&callback=initMap"
         type="text/javascript"></script>
 <script src="js/script.js"></script>

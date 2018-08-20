@@ -12,6 +12,26 @@
 }
 @media all and (max-width: 992px){
     /*----------- section-1 -------------*/
+    /*.navbar{*/
+        /*position: absolute;*/
+        /*z-index: 25;*/
+    /*}*/
+    .nav-item{
+
+    }
+    nav.navbar{
+        /*align-items: start;*/
+    }
+    a.nav-link{
+        padding: 0;
+    }
+    img.logo-small{
+        max-width: 50px;
+        margin: 0;
+    }
+    .logo{
+        margin: 0;
+    }
     .dots{
         display: none;
     }
@@ -20,7 +40,7 @@
         margin-top: 10%;
     }
     .section-1-title{
-        margin-top: 10%;
+        margin-top: 5%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,8 +100,8 @@
 @media all and (max-width: 515px){
     /*----------- section-1 -------------*/
     .logo{
-        max-width: 150px;
-        margin-top: 5%;
+        max-width: 120px;
+        margin-top: 0;
     }
     .section-1-title{
         font-size: 2.5rem;
@@ -90,14 +110,18 @@
         font-size: 1rem;
     }
     /*----------- section-2 -------------*/
+    .section2-container{
+        padding-top: 5px;
+    }
     .section-2-first-title{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        padding: 10px 0;
     }
     .section-2-second-title{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .section2-text{
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .sec-2-item{
         margin-bottom: 10px;
@@ -113,12 +137,16 @@
     }
     .section-3-title{
         font-size: 1.4rem;
+        padding: 8% 0 4% 0;
     }
     .text-under-video{
         font-size: 1rem;
     }
     .text-below-form{
         font-size: 1rem;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-bottom: 5px;
     }
     .sec-3-form{
         margin-top: 30px;
@@ -133,7 +161,7 @@
         padding: 2px 15px;
     }
 
-    /*----------- section-3 -------------*/
+    /*----------- section-4 -------------*/
     .sec-4-title{
         margin-top: 20%;
         font-size: 1.5rem;
@@ -158,7 +186,7 @@
 
     /*----------- section-7 -------------*/
     .sec-7-title{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-top: 10%;
         margin-bottom: 5%;
     }
@@ -166,7 +194,8 @@
         height: 200px;
     }
     .map-text{
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 7px;
     }
 
     /*----------- section-8 -------------*/
@@ -200,5 +229,20 @@
         display: none;
     }
 
+}
 
+@media all and (max-width: 900px){
+    .popup_my{
+        width: 650px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .popup_my{
+        width: 350px;
+    }
+    .pop-btn{
+        width: 50%;
+        font-size: 0.8rem;
+    }
 }

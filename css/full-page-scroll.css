@@ -34,22 +34,31 @@ body, html {
 
 .dots li a {
 	padding: 10px;
-	width: 4px;
+	width: 35px;
 	height: 5px;
 	display: block;
 }
 
+
 .dots li a:before {
 	content: '';
 	position: absolute;
-	width: 8px;
-	height: 8px;
-	background: rgba(255, 255, 255, 0.48);
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-ms-border-radius: 10px;
-	-o-border-radius: 10px;
-	border-radius: 10px;	
+	/*width: 8px;*/
+	/*height: 8px;*/
+	/*background: rgba(255, 255, 255, 0.48);*/
+	width: 12px;
+	height: 2px;
+	background: gainsboro;
+	/*-webkit-border-radius: 10px;*/
+	/*-moz-border-radius: 10px;*/
+	/*-ms-border-radius: 10px;*/
+	/*-o-border-radius: 10px;*/
+	/*border-radius: 10px;*/
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
 	-webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
 	-moz-transition: -moz-transform 0.3s ease, background-color 0.3s ease;
 	-ms-transition: -ms-transform 0.3s ease, background-color 0.3s ease;
@@ -57,14 +66,21 @@ body, html {
 	transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+
+.color-black{
+
+}
+
 .dots li a.active:before {
 	content: '';
 	background-color: #FFFFFF;
-	width: 14px;
-	height: 14px;
-	margin-top: -4px;
-	left: 7px; 
-	background-color: white;
+	width: 35px;
+	height: 2px;
+	transition: width 0.8s;
+	/*margin-top: -4px;*/
+	/*left: 7px;*/
+	background: gainsboro;
+	/*background-color: red;*/
 	-webkit-transform: scale(1.0);
 	-moz-transform: scale(1.0);
 	-ms-transform: scale(1.0);

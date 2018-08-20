@@ -90,7 +90,7 @@ a:hover {
     text-decoration:none;
 }
 a:focus, a:active {
-    color: #c83867;
+    color: #92deff;
     text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{
@@ -184,7 +184,7 @@ button.burger{
     font-family: Intro, Arial, sans-serif;
     color: #92deff;
     font-size: 4.18rem;
-    margin-top: 10px;
+    margin-top: 2px;
     line-height: 1;
     border-right: 5px solid #92deff;
     padding-right: 5%;
@@ -249,10 +249,10 @@ button.burger{
     color: #92deff;
 }
 .sec-3-video, .sec-6-video{
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+    /*position: relative;*/
+    /*padding-bottom: 56.25%; !* 16:9 *!*/
+    /*padding-top: 25px;*/
+    /*height: 0;*/
 }
 .sec-3-video iframe, .sec-6-video iframe{
     position: absolute;
@@ -324,12 +324,13 @@ button.burger{
 }
 .sec-3-form button:hover{
     cursor: pointer;
+    border: 1px solid #3eaac9;
 }
 /*----------- section-4 -------------*/
 .sec-4-title{
     font-family: Intro, Arial, sans-serif;
     font-size: 2.12rem;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 3%;
 }
 .tabs{
@@ -397,7 +398,11 @@ nav-link-tab i{
     height: 100%;
 }
 .slider-images{
-    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.project-name{
+
 }
 
 /*----------- section-7 -------------*/
@@ -413,7 +418,7 @@ nav-link-tab i{
 }
 .map-text{
     font-family: EXO_2_0, Arial, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #3d3d3d;
     margin-bottom: 15px;
     white-space: nowrap;
@@ -505,6 +510,7 @@ nav-link-tab i{
 }
 .footer-form button:hover{
     cursor: pointer;
+    border: 2px solid #3eaac9;
 }
 
 /*----------- section-6 -------------*/
@@ -548,4 +554,147 @@ nav-link-tab i{
     text-decoration: underline;
 }
 
+.is-hidden {
+    display: none;
+}
 
+.popup_my{
+    width: 850px;
+    /*background-color: white;*/
+    position: fixed;
+    top: 50%;
+    /*left: 0;*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+}
+.pop-title-text{
+    font-family: Intro, Arial, sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    /*background: red;*/
+    margin-top: 5%;
+    text-transform: uppercase;
+
+}
+.pop-vid-wrap{
+    width: 80%;
+    margin: 2% 0 0 10%;
+}
+
+.popup-video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.popup-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.pop-btn-wrap{
+    margin: 2% 0 5% 0;
+    display: flex;
+    justify-content: center;
+}
+a.pop-btn{
+    text-align: center;
+    white-space: nowrap;
+}
+.pop-btn{
+    display: block;
+    font-size: 1.1rem;
+    width: 33%;
+    align-items: center;
+    padding: 10px 0;
+    border: 2px solid #92deff;
+    border-radius: 5px;
+    color: white;
+    background: none;
+}
+.pop-btn:hover{
+    cursor: pointer;
+    border: 2px solid #3eaac9;
+}
+.mfp-close-btn-in .mfp-close{
+    color: white;
+}
+.sec-6-video a{
+    position: relative;
+}
+.b-play {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    /*border: 2px solid #fff;*/
+    border-radius: 50%;
+    /*color: #fff;*/
+    transition: all .3s;
+}
+
+.b-play svg {
+    display: block;
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+}
+
+.b-video {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.b-video:hover .b-play {
+    /*color: #00a651;*/
+    /*border-color: #00a651;*/
+}
+
+.b-video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.b-video > img {
+    display: block;
+}
+
+.b-video iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.b-video .b-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
