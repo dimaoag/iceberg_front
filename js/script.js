@@ -1,29 +1,39 @@
-//
-// new fullScroll({
-//     // parent container
-//     container : 'main',
-//     // content section
-//     sections : 'section',
-//     // animation speed
-//     animateTime : 0.7,
-//     // easing for animation
-//     animateFunction : 'ease',
-//     // current position
-//     currentPosition: 0,
-//     // display dots navigation
-//     displayDots: true,
-//     // where to place the dots navigation
-//     dotsPosition: 'left'
-// });
-$(document).ready(function(){
-    new fullScroll({
-        mainElement: 'main',
-        displayDots: true,
-        dotsPosition: 'right',
-        animateTime: 0.5,
-        animateFunction: 'ease'
+var w = window.innerWidth;
+
+if (w > 1125){
+    loadjscssfile("./css/full-page-scroll.css", "css"); ////dynamically load and add this .css file
+    loadjscssfile("js/full-page-scroll.js", "js"); //dynamically load and add this .js file
+    $(document).ready(function(){
+        new fullScroll({
+            mainElement: 'main',
+            displayDots: true,
+            dotsPosition: 'right',
+            animateTime: 0.5,
+            animateFunction: 'ease'
+        });
     });
-});
+
+} else {
+    document.styleSheets[2].disabled = true;
+    loadjscssfile("./css/media_small.css", "css");
+}
+
+
+function loadjscssfile(filename, filetype){
+    if (filetype=="js"){ //if filename is a external JavaScript file
+        var fileref=document.createElement('script');
+        fileref.setAttribute("type","text/javascript");
+        fileref.setAttribute("src", filename);
+    }
+    else if (filetype=="css"){ //if filename is an external CSS file
+        var fileref=document.createElement("link");
+        fileref.setAttribute("rel", "stylesheet");
+        fileref.setAttribute("type", "text/css");
+        fileref.setAttribute("href", filename);
+    }
+    if (typeof fileref!="undefined")
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+}
 
 
 // tabs

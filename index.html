@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="js/jquery-3.3.1.js"></script>-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/full-page-scroll.css">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>IceBerg</title>
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -61,9 +63,9 @@
                 </div>
                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
                     <div class="section-1-text">
-                        <p>Наводим порядок в <span class="section-1-text-color">учете клиентов</span></p>
-                        <p>Создаем и улучшаем <span class="section-1-text-color">сайты</span></p>
-                        <p> Настраиваем <span class="section-1-text-color">рекламу</span></p>
+                        <p style="color: white">Наводим порядок в <span class="section-1-text-color">учете клиентов</span></p>
+                        <p style="color: white">Создаем и улучшаем <span class="section-1-text-color">сайты</span></p>
+                        <p style="color: white"> Настраиваем <span class="section-1-text-color">рекламу</span></p>
                     </div>
                 </div>
             </div>
@@ -153,7 +155,7 @@
                 <div class="col-lg-6">
                     <div class="sec-3-right-block h-100">
                         <h2 class="text-below-form">Получите бесплатный разбор и совет, как решить проблему с клиентами</h2>
-                        <form class="sec-3-form form-sec-3 js-form">
+                        <form class="sec-3-form form-sec-3 js-form d-flex flex-column align-items-end">
                             <input data-mask="callback-catalog-phone" type="text" placeholder="Введите телефон" name="phone" required>
                             <!--<div class="clear clearfix"></div>-->
                             <button type="submit" class="clearfix">ПОЛУЧИТЬ СОВЕТ</button>
@@ -188,12 +190,12 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="nav-text mb-3">
-                                        <!--<h3>Кликните по картинке</h3>-->
-                                        <!--<a href="#">-->
-                                            <!--<div class="nav-link-tab">-->
-                                                <!--<i class="fa fa-link" aria-hidden="true"></i>-->
-                                            <!--</div>-->
-                                        <!--</a>-->
+                                        <h3>Кликните по картинке</h3>
+                                        <a href="#">
+                                            <div class="nav-link-tab">
+                                                <i class="fa fa-link" aria-hidden="true"></i>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -213,7 +215,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <a href="./salon_ice_link/index.html">
+                                                    <a href="http://salon.meri-shop.com">
                                                         <img class="d-block w-100" src="images/project3.png" alt="Second slide">
                                                     </a>
                                                 </div>
@@ -240,12 +242,12 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="nav-text mb-3">
-                                        <!--<h3>Квиз по откатным воротам</h3>-->
-                                        <!--<a href="#">-->
-                                            <!--<div class="nav-link-tab">-->
-                                                <!--<i class="fa fa-link" aria-hidden="true"></i>-->
-                                            <!--</div>-->
-                                        <!--</a>-->
+                                        <h3>Кликните по картинке</h3>
+                                        <a href="#">
+                                            <div class="nav-link-tab">
+                                                <i class="fa fa-link" aria-hidden="true"></i>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -427,18 +429,18 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="sec-6-nav float-right mt-3">
-                        <a href="#carouselExampleControls6" role="button" data-slide="prev">
-                            <img src="images/left_white.png" alt="">
-                        </a>
-                        <a href="#carouselExampleControls6" role="button" data-slide="next">
-                            <img src="images/right_white.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!--<div class="row">-->
+                <!--<div class="col-12">-->
+                    <!--<div class="sec-6-nav float-right mt-3">-->
+                        <!--<a href="#carouselExampleControls6" role="button" data-slide="prev">-->
+                            <!--<img src="images/left_white.png" alt="">-->
+                        <!--</a>-->
+                        <!--<a href="#carouselExampleControls6" role="button" data-slide="next">-->
+                            <!--<img src="images/right_white.png" alt="">-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </section>
     <section class="section7">
@@ -516,13 +518,15 @@
 </div>
 
 
-<!--<script src="js/jquery-3.3.1.js"></script>-->
-<script src="js/libs.js"></script>
+
+
+<script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/full-page-scroll.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3g7aWqbS3jjG4h6gJJroRpCR6TFzjJPM&callback=initMap"
         type="text/javascript"></script>
+<script src="js/libs.js"></script>
 <script src="js/script.js"></script>
 
 </body>

@@ -115,7 +115,7 @@ img{
 
 
 .section1 {
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bg-min.png");
     background-size: cover;
     /*background: url(img/image.jpg) no-repeat center center fixed;*/
     /*background-size: cover;*/
@@ -198,6 +198,7 @@ button.burger{
 }
 .section-1-text p{
     white-space: nowrap;
+    color: #ffff;
 }
 .section-1-text-color{
     color: #92deff;
