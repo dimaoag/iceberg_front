@@ -6,8 +6,8 @@ $method = $_SERVER['REQUEST_METHOD'];
 $message = "";
 if ( $method == 'POST' ) {
     $project_name = "IceBerg_Quiz";
-    $admin_email = "dimaoag@gmail.com";
-//    $admin_email = "iceberg.vn.ua@gmail.com";
+//    $admin_email = "dimaoag@gmail.com";
+    $admin_email = "iceberg.vn.ua@gmail.com";
     $form_subject = "Заявка с сайта IceBerg_Quiz";
     $phone_key = 'Телефон';
     $phone_value = '';

@@ -1,7 +1,7 @@
 $(function() {
     $('#dg-container').gallery({
-        // autoplay : true,
-        // interval : 2500,
+        autoplay : true,
+        interval : 2500,
     });
 });
 
