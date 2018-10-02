@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
 
@@ -37,8 +38,8 @@
                             </div>
                         </div>
                         <div class="right-block header-text">
-                            <p>Есть вопросы? <span>Звоните!</span></p>
-                            <a href="tel:0939179871">+380 93 91 79 871</a>
+                            <p>Есть вопросы? <a href="#phone-popup" class="header-phone-link"><span>Звоните!</span></a></p>
+                            <a href="tel:0939179871" class="right-block-tel">+380 93 91 79 871</a>
                         </div>
                     </header>
                 </div>
@@ -55,21 +56,26 @@
                     <section id="dg-container" class="dg-container">
                         <div class="dg-wrapper">
                             <a href="#">
-                                <img src="images/project2.png" alt="image01">
+                                <img src="images/01.png" alt="image01">
                             </a>
                             <a href="#">
-                                <img src="images/project3.png" alt="image02">
+                                <img src="images/02.png" alt="image01">
                             </a>
                             <a href="#">
-                                <img src="images/project4.png" alt="image03">
+                                <img src="images/03.png" alt="image01">
+                            </a>
+                            <a href="#">
+                                <img src="images/04.png" alt="image01">
+                            </a>
+                            <a href="#">
+                                <img src="images/05.png" alt="image02">
                             </a>
                         </div>
                         <nav>
-                            <span class="dg-prev"><i class="fa fa-arrow-left"></i></span>
-                            <span class="dg-next"><i class="fa fa-arrow-right"></i></span>
+                            <span class="dg-prev"><i class="fa fa-angle-left"></i></span>
+                            <span class="dg-next"><i class="fa fa-angle-right"></i></span>
                         </nav>
                     </section>
-                    <p class="examples">Примеры работ</p>
                     <a href="#popup:marquiz_5bae909889ae8b0043f1262d" class="know-price marquiz marquiz__button marquiz__button_shadow marquiz__button_blicked">Узнать стоимость разработки сайта</a>
                 </div>
             </div>
@@ -84,7 +90,7 @@
                             </div>
                         </div>
                         <div class="right-block header-text">
-                            <button class="tel-popup">Заказать звонок</button>
+                            <button href="#phone-popup" class="tel-popup">Заказать звонок</button>
                         </div>
                     </header>
                 </div>
@@ -92,9 +98,27 @@
         </div>
     </div>
 
+    <div id="phone-popup" class="white-popup mfp-hide phone-popup">
+        <h4>Остались вопросы? Введите свой номер и получите детальную информацию.</h4>
+        <div class="course-info-footer">
+            <form action="#" autocomplete="off" class="popup-form js-form">
+                <input type="text" name="phone" data-mask="callback-catalog-phone" class="course-info-input" placeholder="+380 __-___-__-__" required>
+                <button href="#" class="btn btn-block popup-form-btn" type="submit">Узнать подробнее</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="is-hidden">
+        <div class="white-popup mfp-hide phone-popup" id=popup-thanks>
+            <h4>Спасибо! Ваша заявка отправлена</h4>
+        </div>
+    </div>
+
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/libs.js"></script>
     <script src="js/jquery.gallery.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

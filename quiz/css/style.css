@@ -452,7 +452,7 @@ img{
     justify-content: space-between;
 }
 header{
-    padding: 15px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -474,15 +474,20 @@ header{
 .right-block span{
     color: #92deff;
 }
+.right-block-tel{
+    display: block;
+    text-align: right;
+}
 
 
 
 .dg-container{
     width: 100%;
-    height: 370px;
+    height: 380px;
     position: relative;
 }
 .dg-wrapper{
+    /*width: 481px;*/
     width: 481px;
     height: 316px;
     margin: 0 auto;
@@ -499,11 +504,13 @@ header{
     perspective: 1000px;
 }
 .dg-wrapper a{
-    width: 482px;
-    height: 316px;
+    /*width: 482px;*/
+    /*height: 316px;*/
+    width: 560px;
+    height: 276px;
     display: block;
     position: absolute;
-    left: 0;
+    left: -40px;
     top: 0;
     background: transparent url(../images/browser.png) no-repeat top left;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
@@ -517,7 +524,9 @@ header{
 }
 .dg-wrapper a img{
     display: block;
-    padding: 41px 0px 0px 1px;
+    /*padding: 41px 0px 0px 1px;*/
+    height: 100%;
+    width: 100%;
 }
 .dg-wrapper a div{
     font-style: italic;
@@ -535,19 +544,23 @@ header{
     display: block;
 }
 .dg-container nav{
-    width: 58px;
+    width: 100px;
     position: absolute;
     z-index: 1000;
     bottom: 10px;
     left: 50%;
-    margin-left: -29px;
+    /*margin-left: -29px;*/
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px -50px;
 }
 .dg-container nav span{
     /*text-indent: -9000px;*/
-    float: left;
+    /*float: left;*/
     cursor:pointer;
-    width: 24px;
-    height: 25px;
+    /*width: 24px;*/
+    /*height: 50px;*/
     opacity: 0.8;
     color: white;
     /*background: transparent url(../images/arrows.png) no-repeat top left;*/
@@ -576,7 +589,7 @@ header{
     text-transform: uppercase;
 }
 .know-price{
-    margin-top: 50px;
+    margin-top: 25px;
     background-color: #0e80b2;
     font-size: 1.7rem;
     padding: 15px 30px;
@@ -597,9 +610,53 @@ header{
     padding: 10px 20px;
     border-radius: 20px;
 }
-.tel-popup:hover{
+.tel-popup:hover, .tel-popup:focus{
     cursor: pointer;
+    outline: none;
 }
+.marquiz__button{
+    color: white!important;
+    border: none!important;
+    background-color: #0e80b2!important;
+}
+.is-hidden {
+    display: none;
+}
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    color: black;
+}
+.phone-popup{
+    padding: 25px;
+}
+.phone-popup h4{
+    text-align: center;
+    padding: 15px 0;
+}
+.popup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup-form input{
+    margin: 15px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #0e80b2;
+}
+.popup-form-btn{
+    background-color: #0e80b2;
+    color: white;
+}
+
 @media all and (max-width: 800px){
     .know-price{
         font-size: 1.5rem;
@@ -621,16 +678,22 @@ header{
     .header-text{
         text-align: center;
     }
+    .right-block-tel{
+        text-align: center;
+    }
 }
 @media all and (max-width: 600px){
     .know-price{
         font-size: 1.2rem;
     }
     .dg-container {
-        height: 300px;
+        height: 315px;
+    }
+    .dg-container nav{
+        font-size: 36px;
     }
     .dg-wrapper{
-        width: 400px;
+        width: 316px;
         height: 234px;
     }
     .dg-wrapper a{
@@ -655,9 +718,11 @@ header{
     .know-price{
         font-size: 1rem;
     }
-
+    .dg-container {
+        height: 265px;
+    }
     .dg-wrapper{
-        width: 350px;
+        width: 269px;
         height: 184px;
     }
     .dg-wrapper a{
@@ -671,14 +736,17 @@ header{
         padding: 10px 20px;
     }
     .dg-container {
-        height: 280px;
+        height: 215px;
     }
     .dg-wrapper{
-        width: 289px;
+        width: 209px;
         height: 134px;
     }
     .dg-wrapper a{
         width: 289px;
         height: 134px;
+    }
+    .marquiz__button{
+        font-size: 0.9rem!important;
     }
 }
