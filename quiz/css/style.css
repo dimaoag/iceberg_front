@@ -443,7 +443,7 @@ img{
 /* --------------- /базовые настройки ---------*/
 
 .wrapper{
-    background-color: black;
+    /*background-color: black;*/
     min-height: 100vh;
     font-weight: bold;
     overflow: hidden;
