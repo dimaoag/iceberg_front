@@ -1,0 +1,1329 @@
+@font-face {
+    font-family: "Intro";
+    src: url("../font/Intro.otf");
+}
+/* font-family: "Exo 2.0 Extra Light"; */
+@font-face {
+    font-family: "Exo 2.0 Extra Light";
+    src: url("../font/exo_2/Exo2.0-ExtraLight.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "Exo 2.0 Light Italic"; */
+@font-face {
+    font-family: "Exo 2.0 Light Italic";
+    src: url("../font/exo_2/Exo2.0-LightItalic.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "Exo 2.0 Regular"; */
+@font-face {
+    font-family: "Exo 2.0 Regular";
+    src: url("../font/exo_2/Exo2.0-Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* --------------- базовые настройки ---------*/
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+    min-height: 100%; /* всегда показываем вертикальную полосу прокрутки  */
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Exo 2.0 Regular', Arial, sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height: 100%;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited { /* порядок правил для ссылок имеет значение */
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dddddd;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+/*button:hover{*/
+    /*color: #eeeeee;*/
+    /*-webkit-transition: all 0.3s ease;*/
+    /*-o-transition: all 0.3s ease;*/
+    /*transition: all 0.3s ease;*/
+/*}*/
+svg:hover .play{
+    fill: #095ac0;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+a:focus, a:active {
+    color: white;
+    text-decoration: none;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clr {
+    clear: both;
+}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+li, ol {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type=text], textarea {
+    outline: none;
+}
+
+/* --------------- /базовые настройки ---------*/
+
+header{
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    background: #ffffff url("../images/sec1_bg.png") center center ;
+    background-size: cover;
+    z-index: 1;
+}
+.bounce {
+    -webkit-animation: bounce 2s infinite;
+    -moz-animation: bounce 2s infinite;
+    -ms-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+header:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.65);
+    z-index: 0;
+}
+.header{
+    position: relative;
+    z-index: 1;
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo-address, .header-phone{
+    font-size: 1.25rem;
+}
+.logo-img{
+    display: block;
+    min-width: 71px;
+    min-height: 71px;
+    margin-right: 25px;
+}
+.logo-title{
+    font-size: 1.7rem;
+}
+.header-title{
+    color: #ffffff;
+    font-family: Intro, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+    padding-right: 8%;
+}
+.header-title:first-letter{
+    padding-left: 7px;
+    padding-top: 7px;
+    margin-right: 2px;
+    color: #18048e;
+    font-size: 3.56rem;
+    letter-spacing: 6.7px;
+    background-color: white;
+}
+.header-title-2{
+    padding: 20px 15% 70px 0;
+    font-size: 2.25rem;
+    font-weight: 500;
+    letter-spacing: 2.7px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    align-items: flex-end;
+}
+.form-input-wrap{
+    display: flex;
+    flex-direction: column;
+}
+.form-input{
+    background: none;
+    /*padding: 7px 2px;*/
+    outline: none;
+    border: none;
+    font-family: 'Exo 2.0 Light Italic', Arial, sans-serif;
+    color: white;
+    white-space: nowrap;
+    border-bottom: 2px solid #0000a0;
+    /*border-image: linear-gradient(to left, #0000ff 25%, #0000a0 50%, #00009f 100%) 50% 0%;*/
+    /*margin-right: 20px;*/
+    /*margin-top: 15px;*/
+    box-sizing: border-box;
+    border-radius: 0;
+    margin-right: 30px;
+    border-top: none;
+    width: 300px;
+}
+.button{
+    position: relative;
+    border: none;
+    outline: none;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 25px;
+    background-color: #18048e;
+    background-image: linear-gradient(-17deg, rgba(26, 26, 91, 0.97) 0%, rgba(0, 0, 159, 0.94) 100%);
+    cursor: pointer;
+    margin-top: 15px;
+    width: 300px;
+    /*z-index: 3;*/
+}
+.button span{
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+.button:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-image: linear-gradient(140deg, #295c0f 0%, #498c1f 100%);*/
+    transition: opacity 0.5s ease-out;
+    background-color: rgba(0,0,0,0.7);
+    /*z-index: 1;*/
+    opacity: 0;
+    color: white;
+}
+.button:hover:after {
+    opacity: 0.5;
+    color: white;
+}
+.form-btn-sec1{
+
+}
+.center-block{
+    margin-top: 100px;
+}
+
+/* --------------- section-2 ---------*/
+.section-2{
+    padding-top: 150px;
+}
+
+.section-title{
+    font-family: Intro, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+.main-jobs-title{
+    opacity: 0.68;
+    color: #dcdada;
+    font-family: Intro, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.jobs-list-item{
+    display: flex;
+}
+.jobs-list li{
+    padding: 10px 0;
+    font-size: 1.20rem;
+    margin-left: 30px;
+}
+.jobs-list li:before{
+    content: '\2014';
+    position: absolute;
+    margin-left: -30px;
+    color: #18048e;
+}
+
+/* --------------- section-3 ---------*/
+.section-3{
+    padding: 300px 0 200px 0;
+}
+.rellax-top{
+    position: relative;
+}
+.rellax-bottom{
+    position: relative;
+}
+.rellax-item img{
+    background: none;
+}
+.sec-3-rel-1{
+    position: absolute;
+    top: 400px;
+    left: 5%;
+    width: 150px;
+    height: 150px;
+}
+.sec-3-rel-2{
+    position: absolute;
+    top: 600px;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+}
+.sec-3-rel-3{
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+}
+.sec-3-rel-4{
+    position: absolute;
+    top: 800px;
+    right: 25%;
+    width: 100px;
+    height: 100px;
+}
+.section-3-under-title{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.sec-3-content{
+    padding-top: 80px;
+}
+.sec3-right-block p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.sec3-right-block p span{
+    color: #095ac0;
+}
+
+/* --------------- section-4 ---------*/
+.section-4{
+    min-height: 900px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/sec_4_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-4:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: -1;
+}
+.sec-4-box{
+    margin-bottom: 50px;
+}
+.sec-4-title svg{
+    margin-right: 15px;
+    min-height: 60px;
+    min-width: 60px;
+}
+.sec-4-title h3{
+    font-family: Intro, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+.sec-4-under-title{
+    font-size: 1.5rem;
+}
+
+/* --------------- section-5 ---------*/
+.section-5{
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+.sec-5-rel-1{
+    position: absolute;
+    top: 900px;
+    right: 5%;
+    width: 202px;
+    height: 122px;
+}
+.sec-5-rel-2{
+    position: absolute;
+    top: 700px;
+    left: -220px;
+    /*width: 400px;*/
+    height: 500px;
+}
+.sec-5-rel-2 img{
+    height: 100%;
+}
+.sec-5-content{
+    margin-top: 50px;
+}
+.sec-5-content p{
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.sec-5-content p span{
+    color: #052ab2;
+}
+.sec-5-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------- section-6 ---------*/
+.section-6{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.sec-6-title{
+    font-size: 1.85rem;
+    padding-bottom: 100px;
+}
+.carousel-team-wrap{
+    padding: 0 15px;
+    max-height: 420px;
+}
+
+
+/* --------------- section-7 ---------*/
+.section-7{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.sec-7-rel-1{
+    position: absolute;
+    top: 2200px;
+    right: 4%;
+    width: 160px;
+    height: 160px;
+}
+.sec-7-rel-2{
+    position: absolute;
+    top: 4200px;
+    left: 2%;
+    width: 200px;
+    height: 200px;
+}
+
+.section-7{
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.course-gallery{
+    margin: 15px 0;
+    padding-bottom: 30px;
+    position: relative;
+}
+.clip a{
+    display: block;
+    height: 100%;
+    outline: none;
+}
+.gallery a{
+    background: #fff;
+    width: 100%;
+    position: relative;
+    opacity: 0.6;
+    padding: 35px;
+
+}
+.overlay{
+    position: relative;
+}
+.overlay img{
+    width: 100%;
+}
+.my-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.gallery .center a{
+    opacity: 1;
+    padding: 0;
+    margin-top: 17px;
+}
+.gallery-controll-wrap{
+    position: relative;
+    margin: 2px;
+    display: flex;
+    justify-content: flex-end;
+}
+.slider-counter span{
+    color: #dddddd;
+}
+.gallery-controll{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.gallery-prev i, .gallery-next i{
+    color: black;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.gallery-prev{
+    margin-right: 10px;
+}
+.gallery-next{
+    margin-left: 10px;
+}
+
+.team-card{
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 390px;
+}
+.team-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+.team-card .team-img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+
+}
+.team-card:hover .team-img-box{
+    opacity: 0.5;
+}
+.team-img-box img{
+    /*height: 100%;*/
+    width: 100%;
+}
+.team-content{
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    bottom: -100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(0deg, #052ab2, transparent);
+    transition: 0.5s;
+}
+.team-card:hover .team-content{
+    bottom: 0;
+}
+.sec-7-text-below-form{
+    font-size: 1.3rem;
+}
+
+
+/* --------------- section-8 ---------*/
+.section-8{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.sec-8-rel-1{
+    position: absolute;
+    top: 3200px;
+    right: 4%;
+    width: 160px;
+    height: 160px;
+}
+.sec-8-rel-2{
+    position: absolute;
+    top: 4500px;
+    left: 2%;
+    width: 200px;
+    height: 200px;
+}
+.section-8 h4{
+    opacity: 0.5;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+}
+.gallery-sec-8 .clip{
+    box-shadow: 8px 6px 44px 5px rgba(0, 0, 0, 0.07);
+    border: 4px solid rgba(25, 43, 179, 0.19);
+}
+.auto-logo{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* --------------- section-9 ---------*/
+.section-9{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.sec-9-video img{
+    min-height: 500px;
+    height: 100%;
+    object-fit: cover;
+}
+.sec9-right-block{
+}
+.info{
+    font-size: 1.125rem;
+    font-weight: 400;
+
+}
+.info div{
+    padding: 10px 0;
+}
+.map iframe{
+    min-height: 250px;
+    width: 100%;
+}
+.way{
+    display: flex;
+    align-items: center;
+    opacity: 0.85;
+}
+.way a{
+    padding-top: 5px;
+    margin-left: 10px;
+    opacity: 0.85;
+}
+.phone a{
+    color: black;
+    opacity: 0.85;
+}
+
+.bg-modal{
+    background-color: #052ab2!important;
+}
+.modal-btn{
+    border: none;
+}
+
+@media all and (max-width: 1525px){
+    .rellax-bottom, .rellax-top, .sec-7-rel-2, .sec-7-rel-1, .sec-8-rel-1, .sec-8-rel-2{
+        display: none;
+    }
+    .section-3{
+        padding-top: 150px;
+        padding-bottom: 80px;
+    }
+}
+
+@media all and (max-width: 1199px){
+    /*---- section-1 -----*/
+    .header-title{
+        font-size: 2rem;
+        padding-right: 0;
+    }
+    .header-title:first-letter{
+        font-size: 3rem;
+    }
+    .header-title-2{
+        font-size: 1.5rem;
+        padding-right: 0;
+    }
+
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+    .sec-5-rel-2{
+        display: none;
+    }
+    /*---- section-6 -----*/
+
+    /*---- section-7 -----*/
+
+    /*---- section-8 -----*/
+
+    /*---- section-9 -----*/
+
+    /*---- section-10 -----*/
+}
+@media all and (max-width: 991px){
+    /*---- section-1 -----*/
+
+    /*---- section-2 -----*/
+    .cardan-image{
+        display: none;
+    }
+    /*---- section-3 -----*/
+    .sec3-right-block p{
+        padding-top: 20px;
+    }
+    /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
+
+    /*---- section-7 -----*/
+
+    /*---- section-8 -----*/
+    .section-8{
+        padding-top: 50px;
+    }
+    /*---- section-9 -----*/
+    .section-9{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sec-9-video img{
+        min-height: 0;
+        width: 100%;
+    }
+    .map{
+        margin-top: 50px;
+    }
+
+    /*---- section-10 -----*/
+}
+@media all and (max-width: 767px){
+    /*---- section-1 -----*/
+
+    .header-title:first-letter{
+        font-size: 2.5rem;
+    }
+    .header-title-2{
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    .form-input{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    /*---- section-2 -----*/
+    .section-2{
+        padding-top: 50px;
+    }
+    /*---- section-3 -----*/
+    .section-3{
+        padding-top: 50px;
+    }
+    /*---- section-4 -----*/
+    .sec-4-under-title{
+        font-size: 1.3rem;
+    }
+    .sec-4-title h3{
+        font-size: 1.7rem;
+    }
+    /*---- section-5 -----*/
+    .section-5{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    /*---- section-6 -----*/
+    .section-6{
+        padding-top: 50px;
+
+    }
+    /*---- section-7 -----*/
+    .section-7{
+        padding-bottom: 50px;
+    }
+    /*---- section-8 -----*/
+    .section-8{
+        padding-bottom: 10px;
+    }
+    /*---- section-9 -----*/
+    .section-9{
+        padding-bottom: 10px;
+    }
+    /*---- section-10 -----*/
+
+}
+@media all and (max-width: 710px){
+    /*---- section-1 -----*/
+
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
+
+    /*---- section-7 -----*/
+
+    /*---- section-8 -----*/
+
+    /*---- section-9 -----*/
+
+    /*---- section-10 -----*/
+}
+@media all and (max-width: 630px){
+    /*---- section-1 -----*/
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .header-title:first-letter{
+        font-size: 2rem;
+    }
+    .header-title-2{
+        text-align: left;
+        padding: 20px 0 30px 0;
+    }
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
+
+    /*---- section-7 -----*/
+
+    /*---- section-8 -----*/
+
+    /*---- section-9 -----*/
+
+    /*---- section-10 -----*/
+}
+@media all and (max-width: 575px){
+    /*---- section-1 -----*/
+    .header-title{
+        font-size: 1.7rem;
+    }
+    .header-title:first-letter{
+        font-size: 1.7rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .center-block{
+        margin-top: 50px;
+    }
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+    .sec-4-under-title{
+        font-size: 1.1rem;
+    }
+    .sec-4-title h3{
+        font-size: 1.4rem;
+    }
+    /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
+    .sec-6-title{
+        padding-bottom: 50px;
+    }
+    /*---- section-7 -----*/
+    .carousel-team-wrap .active{
+        margin-right: 40px!important;
+    }
+    .team-card {
+        height: 500px;
+    }
+
+    /*---- section-8 -----*/
+    .auto-logo{
+        width: 100%;
+    }
+    .sec-8-title{
+        font-size: 1.5rem;
+    }
+    .section-8 h4{
+        font-size: 1.3rem;
+    }
+    /*---- section-9 -----*/
+
+    /*---- section-10 -----*/
+}
+@media all and (max-width: 530px){
+    /*---- section-1 -----*/
+    .header-title{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 45px;
+    }
+    .header-title:first-letter{
+        font-size: 1.5rem;
+    }
+    .header-title-2{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    header{
+        padding-bottom: 100px;
+    }
+
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
+
+    /*---- section-7 -----*/
+
+    /*---- section-8 -----*/
+
+    /*---- section-9 -----*/
+
+    /*---- section-10 -----*/
+}
+@media all and (max-width: 365px){
+    /*---- section-1 -----*/
+    .header-title{
+        margin-top: 20px;
+        line-height: 40px;
+    }
+    /*---- section-2 -----*/
+
+    /*---- section-3 -----*/
+
+    /*---- section-4 -----*/
+
+    /*---- section-5 -----*/
+
+    /*---- section-6 -----*/
+
+    /*---- section-7 -----*/
+
+    /*---- section-8 -----*/
+
+    /*---- section-9 -----*/
+
+    /*---- section-10 -----*/
+
+}
