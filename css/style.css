@@ -113,18 +113,113 @@ img{
 }
 /* --------------- /базовые настройки ---------*/
 
+section{
+    min-height: 100vh;
+    padding: 10% 0;
+}
 
 .section1 {
-    background-image: url("../images/bg-min.png");
-    background-size: cover;
-    /*background: url(img/image.jpg) no-repeat center center fixed;*/
-    /*background-size: cover;*/
-    /*-moz-background-size: 100%; !* Firefox 3.6+ *!*/
-    /*-webkit-background-size: 100%; !* Safari 3.1+ и Chrome 4.0+ *!*/
-    /*-o-background-size: 100%; !* Opera 9.6+ *!*/
-    /*background-size: 100%; !* Современные браузеры *!*/
-    /*background-repeat: repeat-y;*/
+    background-color: white;
+    padding-top: 0;
 }
+.sections{
+    padding-top: 50px;
+    padding-left: 40px;
+}
+.sections .title{
+    color: #000000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 17.41px;
+    text-transform: uppercase;
+    /* Text style for "I, CEBERG" */
+    letter-spacing: -0.36px;
+}
+.sec-1-wrap{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-1-left-block{
+    padding-left: 10%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sec-1-title{
+    padding: 15px 0;
+}
+.sec-1-title p{
+    color: #000000;
+    font-size: 3rem;
+    /*font-size: 3rem;*/
+    font-weight: 700;
+    line-height: 17.41px;
+    height: 100%;
+    white-space: nowrap;
+}
+.sec-1-left-block .center-wrap{
+    display: flex;
+}
+.sec-1-left-block .center-wrap .line{
+    width: 100px;
+    margin: 10px ;
+    border-top: 4px solid black;
+}
+.sec-1-left-block .center-wrap .text-simple{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 17.41px;
+    /* Text style for "п, росто и" */
+    letter-spacing: -0.24px;
+}
+.sec-1-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 323px;
+    text-align: center;
+    height: 65px;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 17.41px;
+    /* Text style for "Рассчитать" */
+    letter-spacing: -0.24px;
+    cursor: pointer;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: 0.4s;
+    outline: none;
+}
+.sec-1-btn:focus{
+    outline: none;
+}
+.sec-1-btn:hover{
+    color: black;
+    border-color: #5a6268;
+    background-color: #dddddd;
+    outline: none;
+}
+.sec-1-right-block{
+    margin-top: 5%;
+    margin-right: -15px;
+    width: 700px;
+}
+.sec-1-right-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
 
 .section2 {
     background-color: #ffffff;

@@ -3,126 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<script src="js/jquery-3.3.1.js"></script>-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/full-page-scroll.css">
+    <!--<link rel="stylesheet" href="css/full-page-scroll.css">-->
     <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <title>IceBerg</title>
-    <script src="js/script.js"></script>
+
+    <!-- Marquiz script start -->
+    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            Marquiz.init({ id: '5bae909889ae8b0043f1262d' });
+        });
+    </script>
+    <!-- Marquiz script end -->
+
 </head>
 <body>
 
-<div id="main" class="scroll-container">
+<div>
     <section class="section1">
         <div class="container-fluid">
             <div class="row">
-                <nav class="navbar w-100 navbar-expand-lg">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo_small.png" class="logo-small" alt="image">
-                    </a>
-                    <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa fa-navicon"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#2">О нас <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#3">Примеры работ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#4">Отзывы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#5">Контакты</a>
-                            </li>
-                        </ul>
-                        <a href="tel:0962965202" class="phone">+38 093 91 78 871</a>
-                        <!--<a href="#6" class="phone">093 91 79 871</a>-->
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="logo">
-                        <img src="images/logo_big_2.png" alt="">
+                <div class="col-12">
+                    <div class="sections">
+                        <header class="sections__header">
+                            <h1 class="title">ICEBERG</h1>
+                        </header>
+                        <nav class="menu">
+                            <ul class="menu__inner">
+                                <li class="menu__item"><a class="menu__item-link" href="#about-us">О нас</a></li>
+                                <li class="menu__item"><a class="menu__item-link" href="#projects">Примеры работ</a></li>
+                                <li class="menu__item"><a class="menu__item-link" href="#reviews">Отзывы</a></li>
+                                <li class="menu__item"><a class="menu__item-link" href="#contacts">Контакты</a></li>
+                            </ul>
+                            <div class="menu__toggle">
+                                <span class="menu__toggle-inner menu__toggle-inner--open">
+                                    <i class="fa fa-bars"></i>
+                                </span>
+                                <span class="menu__toggle-inner menu__toggle-inner--close">
+                                    <i class="fa fa-close text-white"></i>
+                                </span>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-1-title text-right">
-                        <p>Сделаем Вам <br>результат</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                    <div class="section-1-text">
-                        <p style="color: white">Наводим порядок в <span class="section-1-text-color">учете клиентов</span></p>
-                        <p style="color: white">Создаем и улучшаем <span class="section-1-text-color">сайты</span></p>
-                        <p style="color: white"> Настраиваем <span class="section-1-text-color">рекламу</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section2">
-        <div class="container section2-container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-2-first-title">Какие проблемы мы можем решить</div>
-                    <div class="section-2-second-title">Мы четко видим проблемы и решаем их самым коротким путем</div>
-                </div>
-            </div>
-            <div class="row section2-text mb-2">
-                <div class="col-lg-6">
-                    <div class="sec-2-item w-100">
-                        <div class="sec-2-item-number"><img src="images/01.png" alt=""></div>
-                        <div class="sec-2-item-text">
-                            Клиенты не могут Вас найти в Интернете,
-                            нет ни сайта, ни страницы в соц. сетях
+                    <div class="sec-1-wrap">
+                        <div class="sec-1-left-block">
+                            <div class="sec-1-title"><p id="fittext3">Создаем и улучшаем сайты.</p></div>
+                            <div class="center-wrap">
+                                <div class="line"></div>
+                                <div class="text-simple">просто и со смыслом</div>
+                            </div>
+                            <a href="#popup:marquiz_5bae909889ae8b0043f1262d" class="particles-button sec-1-btn">Рассчитать стоимость</a>
                         </div>
-                    </div>
-                    <div class="sec-2-item w-100">
-                        <div class="sec-2-item-number"><img src="images/02.png" alt=""></div>
-                        <div class="sec-2-item-text">
-                            У вас плохо настроенная реклама и
-                            маленькая конверсия сайта
-                        </div>
-                    </div>
-                    <div class="sec-2-item w-100">
-                        <div class="sec-2-item-number"><img src="images/03.png" alt=""></div>
-                        <div class="sec-2-item-text">
-                            У вас есть сайт или страница в Инстаграм,
-                            но реклама отсутсвует
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="sec-2-item w-100">
-                        <div class="sec-2-item-number"><img src="images/04.png" alt=""></div>
-                        <div class="sec-2-item-text">
-                            Вы пробовали много инструментов,
-                            денег уходило много, а толку мало
-                        </div>
-                    </div>
-                    <div class="sec-2-item w-100">
-                        <div class="sec-2-item-number"><img src="images/05.png" alt=""></div>
-                        <div class="sec-2-item-text">
-                            Вы четко не знаете сколько было клиентов,
-                            обращений и на какую сумму у Вас было продаж
-                        </div>
-                    </div>
-                    <div class="sec-2-item w-100">
-                        <div class="sec-2-item-number"><img src="images/06.png" alt=""></div>
-                        <div class="sec-2-item-text">
-                            Нет человека, который постоянно работал над
-                            улучшением сайта или аккаунта
+                        <div class="sec-1-right-block">
+                            <img src="images/sec_1.png" alt="image">
                         </div>
                     </div>
                 </div>
@@ -522,11 +464,16 @@
 
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/full-page-scroll.js"></script>
+<!--<script src="js/full-page-scroll.js"></script>-->
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3g7aWqbS3jjG4h6gJJroRpCR6TFzjJPM&callback=initMap"
         type="text/javascript"></script>
 <script src="js/libs.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/charming.min.js"></script>
+<script src="js/anime.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
 <script src="js/script.js"></script>
 
 </body>

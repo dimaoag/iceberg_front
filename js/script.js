@@ -1,39 +1,39 @@
-var w = window.innerWidth;
+// var w = window.innerWidth;
+//
+// if (w > 1125){
+//     loadjscssfile("./css/full-page-scroll.css", "css"); ////dynamically load and add this .css file
+//     loadjscssfile("js/full-page-scroll.js", "js"); //dynamically load and add this .js file
+//     $(document).ready(function(){
+//         new fullScroll({
+//             mainElement: 'main',
+//             displayDots: true,
+//             dotsPosition: 'right',
+//             animateTime: 0.5,
+//             animateFunction: 'ease'
+//         });
+//     });
+//
+// } else {
+//     document.styleSheets[2].disabled = true;
+//     loadjscssfile("./css/media_small.css", "css");
+// }
 
-if (w > 1125){
-    loadjscssfile("./css/full-page-scroll.css", "css"); ////dynamically load and add this .css file
-    loadjscssfile("js/full-page-scroll.js", "js"); //dynamically load and add this .js file
-    $(document).ready(function(){
-        new fullScroll({
-            mainElement: 'main',
-            displayDots: true,
-            dotsPosition: 'right',
-            animateTime: 0.5,
-            animateFunction: 'ease'
-        });
-    });
 
-} else {
-    document.styleSheets[2].disabled = true;
-    loadjscssfile("./css/media_small.css", "css");
-}
-
-
-function loadjscssfile(filename, filetype){
-    if (filetype=="js"){ //if filename is a external JavaScript file
-        var fileref=document.createElement('script');
-        fileref.setAttribute("type","text/javascript");
-        fileref.setAttribute("src", filename);
-    }
-    else if (filetype=="css"){ //if filename is an external CSS file
-        var fileref=document.createElement("link");
-        fileref.setAttribute("rel", "stylesheet");
-        fileref.setAttribute("type", "text/css");
-        fileref.setAttribute("href", filename);
-    }
-    if (typeof fileref!="undefined")
-        document.getElementsByTagName("head")[0].appendChild(fileref)
-}
+// function loadjscssfile(filename, filetype){
+//     if (filetype=="js"){ //if filename is a external JavaScript file
+//         var fileref=document.createElement('script');
+//         fileref.setAttribute("type","text/javascript");
+//         fileref.setAttribute("src", filename);
+//     }
+//     else if (filetype=="css"){ //if filename is an external CSS file
+//         var fileref=document.createElement("link");
+//         fileref.setAttribute("rel", "stylesheet");
+//         fileref.setAttribute("type", "text/css");
+//         fileref.setAttribute("href", filename);
+//     }
+//     if (typeof fileref!="undefined")
+//         document.getElementsByTagName("head")[0].appendChild(fileref)
+// }
 
 
 // tabs
@@ -85,6 +85,23 @@ $(document).ready(function(){
         });
     })
 })(jQuery));
+
+$('.menu__item-link').click(function () {
+    $('.menu__toggle-inner--close').trigger('click');
+});
+
+
+
+// Initialize a new instance of Particles to disintegrate/integrate the button
+// $('.sec-1-btn').click(function () {
+//     // $('.sec-1-btn').hide();
+//     var particles = new Particles('.sec-1-btn');
+//     particles.disintegrate();
+// });
+
+
+
+
 
 
 //form
