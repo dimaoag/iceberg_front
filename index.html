@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--<link rel="stylesheet" href="css/full-page-scroll.css">-->
@@ -20,6 +21,46 @@
         });
     </script>
     <!-- Marquiz script end -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127488819-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127488819-1');
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter50094541 = new Ya.Metrika2({
+                        id:50094541,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50094541" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
 </head>
 <body>
@@ -61,7 +102,7 @@
                                 <div class="line"></div>
                                 <div class="text-simple">просто и со смыслом</div>
                             </div>
-                            <a href="#popup:marquiz_5bae909889ae8b0043f1262d" class="particles-button sec-1-btn">Рассчитать стоимость</a>
+                            <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="particles-button sec-1-btn">Рассчитать стоимость</a>
                         </div>
                         <div class="sec-1-right-block">
                             <img src="images/sec_1.png" alt="image">
@@ -97,10 +138,10 @@
                 <div class="col-lg-6">
                     <div class="sec-3-right-block h-100">
                         <h2 class="text-below-form">Получите бесплатный разбор и совет, как решить проблему с клиентами</h2>
-                        <form class="sec-3-form form-sec-3 js-form d-flex flex-column align-items-end">
+                        <form class="sec-3-form form-sec-3 js-form d-flex flex-column align-items-end" onsubmit="yaCounter50094541.reachGoal('Razbor'); return true;">
                             <input data-mask="callback-catalog-phone" type="text" placeholder="Введите телефон" name="phone" required>
                             <!--<div class="clear clearfix"></div>-->
-                            <button type="submit" class="clearfix">ПОЛУЧИТЬ СОВЕТ</button>
+                            <button type="submit" class="clearfix" onclick="ga('send','event','Form','Otprav','Yarlik2');">ПОЛУЧИТЬ СОВЕТ</button>
                             <!--<div class="clear clearfix"></div>-->
                         </form>
                     </div>
@@ -429,11 +470,11 @@
                             <img class="soc-img" src="images/whatsapp.png" alt="">
                         </a>
                     </div>
-                    <form class="footer-form form-sec-8 js-form">
+                    <form class="footer-form form-sec-8 js-form" onsubmit="yaCounter50094541.reachGoal('Cons'); return true;">
                         <input data-mask="callback-catalog-phone" type="text"
                                placeholder="Введите телефон" name="phone" class="form_phone"
                                required>
-                        <button type="submit">Получить консультацию</button>
+                        <button type="submit" onclick="ga('send','event','Form','Otprav','Yarlik2');">Получить консультацию</button>
                     </form>
                 </div>
             </div>

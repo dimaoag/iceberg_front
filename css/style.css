@@ -10,6 +10,10 @@
     font-family: Intro;
     src: url(../fonts/intro/Intro.otf);
 }
+@font-face {
+    font-family: ProximaNova;
+    src: url(../fonts/ProximaNovaExCn-Extrabld.ttf);
+}
 
 
 /* --------------- reset.css --------------- */
@@ -121,6 +125,7 @@ section{
 .section1 {
     background-color: white;
     padding-top: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .sections{
     padding-top: 50px;
@@ -132,6 +137,7 @@ section{
     font-weight: 400;
     line-height: 17.41px;
     text-transform: uppercase;
+    font-family: ProximaNova, sans-serif;
     /* Text style for "I, CEBERG" */
     letter-spacing: -0.36px;
 }
@@ -203,8 +209,8 @@ section{
 }
 .sec-1-btn:hover{
     color: black;
-    border-color: #5a6268;
-    background-color: #dddddd;
+    border-color: #999999;
+    background: none;
     outline: none;
 }
 .sec-1-right-block{
@@ -228,10 +234,14 @@ section{
 .section3 {
     background-color:  #000000;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .section4 {
     background-color:  #ffffff;
+    display: flex;
+    align-items: center;
 }
 
 /*.section5 {*/
@@ -241,14 +251,20 @@ section{
 .section6 {
     background-color:  #000000;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .section7 {
     background-color:  #ffffff;
+    display: flex;
+    align-items: center;
 }
 .section8 {
     background-color:  #000000;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -339,7 +355,7 @@ button.burger{
 /*----------- section-3 -------------*/
 .section-3-title{
     font-family: Intro, Arial, sans-serif;
-    padding: 15% 0 10% 0;
+    padding: 0 0 7% 0;
     font-size: 2rem;
     letter-spacing: 0.24px;
     color: #92deff;
@@ -426,7 +442,6 @@ button.burger{
 .sec-4-title{
     font-family: Intro, Arial, sans-serif;
     font-size: 2.12rem;
-    margin-top: 5%;
     margin-bottom: 3%;
 }
 .tabs{
@@ -505,7 +520,6 @@ nav-link-tab i{
 .sec-7-title{
     font-family: Intro, Arial, sans-serif;
     font-size: 2.1rem;
-    margin-top: 15%;
     margin-bottom: 7%;
 }
 .map{
@@ -530,9 +544,7 @@ nav-link-tab i{
 }
 
 /*----------- section-8 -------------*/
-.footer{
-    padding-top: 20%;
-}
+
 .footer-left-title-1, .sec-6-title{
     font-family: Intro, Arial, sans-serif;
     font-size: 2.1rem;
@@ -611,7 +623,6 @@ nav-link-tab i{
 
 /*----------- section-6 -------------*/
 .sec-6-title{
-    margin-top: 15%;
     margin-bottom: 5%;
 }
 .sec-6-right-block{
