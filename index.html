@@ -64,6 +64,16 @@
 
 </head>
 <body>
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <div class="l_main">
+            <div class="l_square"><span></span><span></span><span></span></div>
+            <div class="l_square"><span></span><span></span><span></span></div>
+            <div class="l_square"><span></span><span></span><span></span></div>
+            <div class="l_square"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+</div>
 
 <div>
     <section class="section1">
@@ -435,7 +445,9 @@
            </div>
            <div class="row">
                <div class="col-lg-9 mb-2">
-                   <div class="map" id="map"></div>
+                   <div class="map">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.6762685709534!2d28.487934321404854!3d49.23516652853881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c8de213a975376!2z0JzQtdGA0Lgg0LzQtdGA0Lgg0LHRjNGO0YLQuCDQutC70YPQsQ!5e0!3m2!1sru!2sua!4v1541410325715" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                   </div>
                </div>
                <div class="col-lg-3 mt-3">
                    <div class="sec-7-way">
@@ -507,8 +519,6 @@
 <script src="js/bootstrap.min.js"></script>
 <!--<script src="js/full-page-scroll.js"></script>-->
 <script src="js/jquery.magnific-popup.min.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3g7aWqbS3jjG4h6gJJroRpCR6TFzjJPM&callback=initMap"
-        type="text/javascript"></script>
 <script src="js/libs.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/charming.min.js"></script>

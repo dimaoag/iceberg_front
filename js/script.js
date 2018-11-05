@@ -35,6 +35,15 @@
 //         document.getElementsByTagName("head")[0].appendChild(fileref)
 // }
 
+$(document).ready(function($) {
+    $(window).load(function() {
+        setTimeout(function() {
+            $('#preloader').fadeOut('slow', function() {});
+        }, 1000);
+
+    });
+});
+
 
 // tabs
 $(".tab-item").not(":first").hide();
@@ -45,14 +54,14 @@ $(".tabs .tab").click(function() {
 
 
 // Initialize and add the map
-function initMap() {
-    var iceberg = {lat: 49.235373, lng: 28.489296};
-    // The map, centered at Uluru
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 19, center: iceberg});
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: iceberg, map: map});
-}
+// function initMap() {
+//     var iceberg = {lat: 49.235373, lng: 28.489296};
+//     // The map, centered at Uluru
+//     var map = new google.maps.Map(
+//         document.getElementById('map'), {zoom: 19, center: iceberg});
+//     // The marker, positioned at Uluru
+//     var marker = new google.maps.Marker({position: iceberg, map: map});
+// }
 
 
 $(document).ready(function(){
