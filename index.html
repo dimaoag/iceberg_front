@@ -9,8 +9,12 @@
     <!--<link rel="stylesheet" href="css/full-page-scroll.css">-->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/effect2.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="js/modernizr.custom.js"></script>
+
     <title>IceBerg</title>
 
     <!-- Marquiz script start -->
@@ -64,16 +68,34 @@
 
 </head>
 <body>
-<div class="preloader" id="preloader">
-    <div class="loader">
-        <div class="l_main">
-            <div class="l_square"><span></span><span></span><span></span></div>
-            <div class="l_square"><span></span><span></span><span></span></div>
-            <div class="l_square"><span></span><span></span><span></span></div>
-            <div class="l_square"><span></span><span></span><span></span></div>
+<!--<div class="preloader" id="preloader">-->
+    <!--<div class="loader">-->
+        <!--<div class="l_main">-->
+            <!--<div class="l_square"><span></span><span></span><span></span></div>-->
+            <!--<div class="l_square"><span></span><span></span><span></span></div>-->
+            <!--<div class="l_square"><span></span><span></span><span></span></div>-->
+            <!--<div class="l_square"><span></span><span></span><span></span></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<div id="ip-container" class="ip-container">
+    <!-- initial header -->
+    <header class="ip-header">
+        <div class="preload-img">
+            <img src="images/logo_preloader.JPG" alt="">
         </div>
-    </div>
+        <div class="ip-loader">
+            <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+                <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+            </svg>
+        </div>
+    </header>
 </div>
+
+
 
 <div>
     <section class="section1">
@@ -525,6 +547,9 @@
 <script src="js/anime.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/particles.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/pathLoader.js"></script>
+<script src="js/main_preloader.js"></script>
 <script src="js/script.js"></script>
 
 </body>

@@ -35,14 +35,17 @@
 //         document.getElementsByTagName("head")[0].appendChild(fileref)
 // }
 
-$(document).ready(function($) {
-    $(window).load(function() {
-        setTimeout(function() {
-            $('#preloader').fadeOut('slow', function() {});
-        }, 1000);
+// $(document).ready(function($) {
+//     $(window).load(function() {
+//         setTimeout(function() {
+//             $('#preloader').fadeOut('slow', function() {});
+//         }, 1000);
+//
+//     });
+// });
 
-    });
-});
+
+
 
 
 // tabs
